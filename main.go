@@ -42,4 +42,4 @@ func redHandler(w http.ResponseWriter, r *http.Request) {
 	draw.Draw(img, img.Bounds(), &image.Uniform{color.RGBA{255, 0, 0, 255}}, image.ZP, draw.Src)
 	w.Header().Set("Content-Type", "image/png")
 	png.Encode(w, img)
-}}
+}
